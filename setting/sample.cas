@@ -1,9 +1,9 @@
 [SYSPATH]
 .\ciaosyst.dat
 [AFTPATH]
-..\TutorialGithubActions
+..\base
 [BFRPATH]
-..\_TutorialGithubActions
+..\target
 [EXEMODE]
 1
 [RSLMODE]
