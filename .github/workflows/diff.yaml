@@ -10,10 +10,12 @@ jobs:
       # リポジトリのチェックアウト
       - uses: actions/checkout@v2
     
-      # kazoechao のインストール (latest)
-      - name: Setup kazoechao
+      # kazoeciao のインストール (latest)
+      - name: Setup kazoeciao
         run: |
           Invoke-WebRequest -Uri "https://ftp.vector.co.jp/71/79/3284/kazoeciao.zip" -Outfile ".\kazoechao.zip"
-          Expand-Archive -Path .\kazoechao.zip -DestinationPath .\kazoechao
+          Expand-Archive -Path .\kazoeciao.zip -DestinationPath .\kazoeciao
+          ls
+
 
 
