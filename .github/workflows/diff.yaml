@@ -18,10 +18,6 @@ jobs:
           ls
           cd .\kazoeciao
           mkdir .\tmp
-          .\kazoeciao.exe /a../setting/sample.cas
+          .\kazoeciao.exe /a../setting/sample.cas | out-null
           cd tmp
           cat .\*.csv
-
-
-
-
