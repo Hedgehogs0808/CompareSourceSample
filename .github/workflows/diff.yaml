@@ -16,9 +16,11 @@ jobs:
           Invoke-WebRequest -Uri "https://ftp.vector.co.jp/71/79/3284/kazoeciao.zip" -Outfile ".\kazoeciao.zip"
           Expand-Archive -Path .\kazoeciao.zip -DestinationPath .\kazoeciao
           ls
-          cd kazoeciao
+          cd .\kazoeciao
           mkdir .\tmp
           kazoeciao.exe /a../setting/sample.cas
+          cd tmp
+          cat .\*.csv
 
 
 
