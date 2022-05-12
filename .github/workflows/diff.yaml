@@ -1,0 +1,19 @@
+name: diff
+on: 
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:    
+      # リポジトリのチェックアウト
+      - uses: actions/checkout@v2
+    
+      # kazoechao のインストール (latest)
+      - name: Setup kazoechao
+        run: |
+          Invoke-WebRequest -Uri "https://ftp.vector.co.jp/71/79/3284/kazoeciao.zip" -Outfile ".\kazoechao.zip"
+          Expand-Archive -Path .\kazoechao.zip -DestinationPath .\kazoechao
+
+

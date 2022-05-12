@@ -1,0 +1,14 @@
+[SYSPATH]
+.\ciaosyst.dat
+[AFTPATH]
+..\TutorialGithubActions
+[BFRPATH]
+..\_TutorialGithubActions
+[EXEMODE]
+1
+[RSLMODE]
+0
+[RSLPATH]
+.\tmp
+[MSGMODE]
+1
